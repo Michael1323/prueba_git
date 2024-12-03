@@ -1,0 +1,70 @@
+header  {
+    background-color: rgb(16, 187, 218);    /*el color de fondo */
+    text-align: center; /*centrar el texto*/
+    padding: 10px;
+}
+/* aqui comienza todo sobre los links */
+a{
+    text-decoration: none; /*sin subrayado */
+    color: rgb(251, 255, 17);  /*el color inicial */
+    font-size: 20px;  /*tamaño de la funte*/
+    transition: color 0.3s ease;  /*efecto de transicion*/
+}
+
+/* para cuando el cursor pase sobre el enlace */
+
+a:hover{
+    color: rgb(9, 250, 69);
+    text-decoration: underline; /*subrayado */
+}
+
+/* aqui van los contenedores */
+
+.content{
+    background-color: orange;
+    border: 1px solid;
+    border-radius: 15px;   /*bordes redondeados*/
+    box-shadow: 0 4px 8px rgba(238, 3, 3, 0.1);  /*sombra suave*/
+    padding: 0 100px;  /*espacio interno*/
+    margin: 20px;  /*margen uniforme*/
+    max-width: 400px;  /*ancho maximo del conteedor*/
+    text-align: justify;  /*centrar contenido*/
+    font-family: Arial, Helvetica, sans-serif;  /*fuente legible*/
+    
+}
+
+footer{
+    background-color: rgb(29, 10, 10);
+    color: #860e0e;
+    text-align: justify;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 2px solid green;  /*linea superior para la separacion*/
+}
+
+img{
+    width: 300px;
+    
+}
+
+
+/* Agregar estilo para las imágenes dentro de los contenedores */
+.content figure {
+    display: flex; /* Organiza los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    gap: 10px; /* Espacio entre las imágenes */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.content img {
+    width: 150px; /* Tamaño de las imágenes */
+    height: auto; /* Mantener proporciones */
+    display: block; /* Asegura que cada imagen sea un bloque dentro de flexbox */
+}
+
+.content figure p {
+    flex-basis: 100%; /* Hace que el texto ocupe toda la fila debajo de las imágenes */
+    text-align: justify; /* Justifica el texto */
+    margin-top: 10px; /* Añade espacio entre las imágenes y el párrafo */
+}
